@@ -1,0 +1,19 @@
+<html>
+<body background = 'http://cdn1.theodysseyonline.com/files/2016/01/04/6358748036944186621892622963_m
+usic.jpg'>
+<head>
+      <h1 style="font-size:32px;">The album of the recent three years</h1>
+</head>
+
+ </div>
+       {% for n in data %} 
+	   <div>{{n}}</div>
+       {%endfor%}
+</div>	
+    <a href=" https://www.youtube.com/watch?v=YQHsXMglC9A&list=PLJNbijG2M7Ox7wj-IqG68ucGeP7tYmGY7"><img src="https://i.ytimg.com/vi/vmCwiXaLfzE/hqdefault.jpg" alt="Adele"></a>
+
+    <form action = "/">
+       <input type="submit" value="Homepage" style="width:300px; height:150px;">
+    </form>
+</body>
+</html>

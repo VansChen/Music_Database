@@ -1,0 +1,57 @@
+<html>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type = "text/javascript">
+    
+    function country_input(id){
+       document.getElementById("id_result").value=id;}
+    
+  </script>
+
+<body background = 'http://cdn1.theodysseyonline.com/files/2016/01/04/6358748036944186621892622963_m
+usic.jpg'>
+<head>
+      <h1 style="font-size:32px;">The album of each year</h1>
+</head>
+
+<div> 
+     	<h1>Please select year</h1>
+        <form method="POST" action="/do_select">
+          <input type="button" value="2010"  onclick="country_input(this.value)">
+          <input type="button" value="2011"  onclick="country_input(this.value)">
+          <input type="button" value="2012"  onclick="country_input(this.value)">
+          <input type="button" value="2013"  onclick="country_input(this.value)">
+          <input type="button" value="2014"  onclick="country_input(this.value)">
+          <input type="button" value="2015"  onclick="country_input(this.value)">
+          <input type="button" value="2016"  onclick="country_input(this.value)">
+          <input type="button" value="2017"  onclick="country_input(this.value)">
+          <br>
+	  <input type="text"  name = "year" id="id_result"> <br><br>
+
+          <input type="submit" value="Enter" style="width:100px; height:50px;">
+
+
+	</form>    	
+   	
+</div>
+
+</div>
+       {% for n in data %} 
+	   <div>{{n}}</div>
+       {%endfor%}
+</div>	
+
+    <form action = "/">
+       <input type="submit" value="Homepage" style="width:300px; height:150px;">
+    </form>
+
+    <form action = "/fifth">
+       <input type="submit" value="Refresh" style="width:300px; height:150px;">
+    </form>
+  
+
+
+
+
+</body>
+</html>
